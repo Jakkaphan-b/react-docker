@@ -22,7 +22,7 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     # ขั้นตอนที่สาม: Build Docker image
-    - name: Build Docker image
+    - name: Build Docker image 
       run: docker build -t Jakkpahan01/react-docker-test4:0.2 .
 
     # ขั้นตอนที่สี่: Push Docker image ไปที่ Docker Hub
